@@ -83,9 +83,6 @@ dyArrow <- function(dygraph,
                         options = arrows)
   }
 
-  # add necessary CSS styles
-  dygraph <- dyCSS(dygraph, system.file("plugins/arrow.css", package = "dygraphs"))
-
   # return dygraph
   dygraph
 }

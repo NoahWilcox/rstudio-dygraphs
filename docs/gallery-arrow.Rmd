@@ -39,3 +39,15 @@ dygraph(dyData) %>%
             direction = "down",
             fillColor = "red")
 ```
+
+```{r}
+dygraph(presidents, main = "Quarterly Presidential Approval Ratings (Northern Arrows)") %>%
+  dyArrow("1950-7-1",
+          "Korea",
+          direction = "ne",
+          fillColor = "#d9534f") %>%
+  dyArrow("1965-1-1",
+          "Vietnam",
+          direction = "nw",
+          fillColor = "#5cb85c")
+```
